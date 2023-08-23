@@ -5,24 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulation</title>
+    <style>
+        .container {
+            background-color: rgb(246, 234, 220);
+            height: 170px;
+            width: 200px;
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        #ans {
+            color: red;
+        }
+        .pari {
+            background-color: rgb(239, 18, 169);
+            border-radius: 7px;
+            color: white;
+            padding: 9px;
+        }
+        .ladla {
+            background-color: blue;
+            border-radius: 7px;
+            color: white;
+            padding: 9px;
+        }
+    </style>
 </head>
-
 <body>
-    <p id="ans">Answer:</p>
-    
-    <button onclick="pari()">Papa ki Pari</button>
-    <button onclick="ladla()">Maa ka Ladla</button>
+    <div class="container">
 
+        <h1>Who are you?</h1>
+        <p id="ans">Answer:</p>
+
+        <button onclick="pari()" class="pari">Papa ki Pari</button>
+        <button onclick="ladla()" class="ladla">Maa ka Ladla</button>
+    </div>
     <script>
         const answer = document.getElementById("ans");
 
-       
         function ladla() {
             answer.innerText = "Answer: I am Maa ka Ladala 👩🏻‍👦🏻"
-            
+
         }
-
-
         function pari() {
             answer.innerText = "Answer: I am Papa ki Pari  👸🏻.."
         }
