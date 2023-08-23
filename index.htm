@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom Manipulation</title>
 </head>
+
 <body>
+    <p id="ans">Answer:</p>
     
+    <button onclick="pari()">Papa ki Pari</button>
+    <button onclick="ladla()">Maa ka Ladla</button>
+
+    <script>
+        const answer = document.getElementById("ans");
+
+       
+        function ladla() {
+            answer.innerText = "Answer: I am Maa ka Ladala 👩🏻‍👦🏻"
+            
+        }
+
+
+        function pari() {
+            answer.innerText = "Answer: I am Papa ki Pari  👸🏻.."
+        }
+    </script>
 </body>
+
 </html>
